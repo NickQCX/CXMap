@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0148D749212D04B1007D2FE5 /* CXMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148D748212D04B1007D2FE5 /* CXMappable.swift */; };
+		0148D74B212D0542007D2FE5 /* CXExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148D74A212D0542007D2FE5 /* CXExtension.swift */; };
 		3FB9D9437FB0B25B4FFCD43D45684ADA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		56B4E17CF139B5F1939ACFB0B3B3FD34 /* Pods-CXMap_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F50D7D892D5A0F7D1685570BB9947B32 /* Pods-CXMap_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8542E46B3BFFD02A046812BE1C9B5766 /* CXMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9D1858F68B21EE76675E80B68946 /* CXMap-dummy.m */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0148D748212D04B1007D2FE5 /* CXMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CXMappable.swift; path = CXMap/Classes/CXMappable.swift; sourceTree = "<group>"; };
+		0148D74A212D0542007D2FE5 /* CXExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CXExtension.swift; path = CXMap/Classes/CXExtension.swift; sourceTree = "<group>"; };
 		0EC2A85BE393D642B91B0D2F8A55B417 /* Pods-CXMap_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CXMap_Example.release.xcconfig"; sourceTree = "<group>"; };
 		10A9A111C38BCEB521368D9984275312 /* CXMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CXMap.modulemap; sourceTree = "<group>"; };
 		1B7FC1112CA32AA526E3AEE396B4D5CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 			children = (
 				5115C7FCCE85868AE6A7D597C9879A0C /* Pod */,
 				B4C02BE0C6D0C220FE9D13D67FC90BCA /* Support Files */,
+				0148D748212D04B1007D2FE5 /* CXMappable.swift */,
+				0148D74A212D0542007D2FE5 /* CXExtension.swift */,
 			);
 			name = CXMap;
 			path = ../..;
@@ -315,6 +321,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					FDFC21A63D45BB2BC0B10212B3CBD5FB = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -356,6 +367,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0148D74B212D0542007D2FE5 /* CXExtension.swift in Sources */,
+				0148D749212D04B1007D2FE5 /* CXMappable.swift in Sources */,
 				8542E46B3BFFD02A046812BE1C9B5766 /* CXMap-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 610629D4FF3F230AD5788593AA8D21C8 /* CXMap.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -672,6 +686,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 610629D4FF3F230AD5788593AA8D21C8 /* CXMap.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
