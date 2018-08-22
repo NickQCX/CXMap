@@ -1,0 +1,6 @@
+framework module Pods_CXMap_Example {
+  umbrella header "Pods-CXMap_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

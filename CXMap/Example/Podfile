@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CXMap_Example' do
+  pod 'CXMap', :path => '../'
+
+  target 'CXMap_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

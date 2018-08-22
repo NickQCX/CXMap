@@ -1,0 +1,6 @@
+framework module CXMap {
+  umbrella header "CXMap-umbrella.h"
+
+  export *
+  module * { export * }
+}
