@@ -9,13 +9,7 @@
 import UIKit
 import CXMap
 
-struct GuideTextModel: CXMappable {
-    
-    var line1 = ""
-    var button1 = ""
-    var button2 : String?
-    var button3 : String?
-}
+
 
 struct GuideModel: CXMappable {
     
@@ -25,6 +19,14 @@ struct GuideModel: CXMappable {
     var amount = "0"
     var wb = "0"
     var text_number = ""
+    
+    struct GuideTextModel: CXMappable {
+        
+        var line1 = ""
+        var button1 : String?
+        var button2 : String?
+        var button3 : String?
+    }
 }
 
 let dict = [
